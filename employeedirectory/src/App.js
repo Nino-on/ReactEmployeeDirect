@@ -1,18 +1,28 @@
 import React, { Component } from 'react';
 import './App.css';
 import Table from  './components/employee_list.js';
+import Searchbar from  './components/search.js';
 import employee from './Employee.json';
+
+
+
 
 class App extends Component{
   state={
     employee:employee
   };
 
+
  
   render() {
     console.log (employee)
       return(
+        
         <div>
+          <Searchbar
+           
+           
+          />
           {this.state.employee.map((employee,index)=>(
             <Table key={index}
               id={employee.id}
@@ -20,6 +30,7 @@ class App extends Component{
               occupation={employee.occupation}
               location={employee.location}
               />
+              
           ))};
         </div>
       );

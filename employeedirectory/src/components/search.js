@@ -1,13 +1,26 @@
-import React from "react";
+import React, {useState}from "react";
 
 function Searchbar(props) {
+  const [username ,setUsername] = useState();
+
+  const handleSubmit = e => {
+    e.preventDefault();
+    console.log("Search returned " + username);
+    
+  };
+
+
+
+
+
+
   return (
-    <form className="search">
+    <form onSubmit={handleSubmit}className="search">
     <div className="form-group">
       <label htmlFor="language">Search Term:</label>
       <input
         value={props.search}
-        onChange={props.handleInputChange}
+        onChange={e => setUsername(e.target.value)}
         name="term"
         list="term"
         type="text"
@@ -15,6 +28,10 @@ function Searchbar(props) {
         placeholder="Type in a search term to begin"
         id="term"
       />
+       <div className="mt-4">
+          <h3> {username}</h3>
+          
+        </div>
       
     </div>
   </form>

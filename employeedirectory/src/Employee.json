@@ -38,6 +38,15 @@
         "https://vignette2.wikia.nocookie.net/fictionalcharacters/images/a/ac/Squidward.png/revision/latest?cb=20131121012626",
       "occupation": "Co-owner",
       "location": "Aventura"
+    },
+    {
+      "id": 6,
+      "name": "Annoying Work",
+      "image":
+        "https://vignette2.wikia.nocookie.net/fictionalcharacters/images/a/ac/Squidward.png/revision/latest?cb=20131121012626",
+      "occupation": "dumb shit",
+      "location": "nowhere"
     }
+    
   ]
   
